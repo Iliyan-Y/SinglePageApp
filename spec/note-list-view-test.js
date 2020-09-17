@@ -9,7 +9,7 @@ describe(NoteListView, function () {
     notelist.createNote('This is a test note');
     var notelistview = new NoteListView(notelist);
     expect(notelistview.returnView()).toBe(
-      '<ul><li id="note-0" ><div><a href="#0">This is a test note</a></div></li></ul>'
+      '<ul><li><div id="note-0"><a href="#note-0"> This is a test note</a></div></li></ul>'
     );
   });
   it('it stores a NoteList object with more than one note, and returns the notes in structured html', function () {
@@ -18,7 +18,7 @@ describe(NoteListView, function () {
     notelist.createNote('This is also a test note');
     var notelistview = new NoteListView(notelist);
     expect(notelistview.returnView()).toBe(
-      '<ul><li id="note-0" ><div><a href="#0">This is a test note</a></div></li><li id="note-1" ><div><a href="#1">This is also a test n</a></div></li></ul>'
+      '<ul><li><div id="note-0"><a href="#note-0"> This is a test note</a></div></li><li><div id="note-1"><a href="#note-1"> This is also a test n</a></div></li></ul>'
     );
   });
 
@@ -29,7 +29,7 @@ describe(NoteListView, function () {
     );
     var notelistview = new NoteListView(notelist);
     expect(notelistview.returnView()).toBe(
-      '<ul><li id="note-0" ><div><a href="#0">it stores a NoteList </a></div></li></ul>'
+      '<ul><li><div id="note-0"><a href="#note-0"> it stores a NoteList </a></div></li></ul>'
     );
   });
 });
