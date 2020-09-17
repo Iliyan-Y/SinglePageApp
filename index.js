@@ -7,7 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
   noteList.createNote('NOte !');
   noteList.createNote('NOte TWO !');
 
+  console.log()
+
   notesController.getHtml();
+  notesController.submitForm()
 
   noteList.returnNotes().map((note) => {
     singleNotesController.clickFunction(note.id);
