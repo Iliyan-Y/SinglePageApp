@@ -1,0 +1,26 @@
+{
+  "name": "the_most_amazingest_testing_framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fraserbrookhouse/The-Most-Amazingest-Testing-Framework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fraserbrookhouse/The-Most-Amazingest-Testing-Framework/issues"
+  },
+  "homepage": "https://github.com/fraserbrookhouse/The-Most-Amazingest-Testing-Framework#readme",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}
